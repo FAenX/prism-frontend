@@ -82,6 +82,19 @@ $primary-color3:#4122003f;
         animation: spin 3s ;
         animation-iteration-count: infinite;        
       }
+      .text-content{
+        @include flex-col();
+        margin: 1em;
+        font-size: 1.5em;
+        font-weight: 300;
+        #company-name{
+          //border-bottom: $primary-color solid 1px;
+          margin-bottom: 5px;
+        }
+        #site-info{
+          margin: 1em;
+        }
+      }
       
       .MuiSvgIcon-root{
         fill: $primary-color2;
@@ -90,11 +103,6 @@ $primary-color3:#4122003f;
       .contacts{
         margin-top: 1em;
       }   
-      .MuiTypography-body1{
-        margin: 1em;
-        font-size: 1.5em;
-        font-weight: 300;
-      }
       
     }
   }  

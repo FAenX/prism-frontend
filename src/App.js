@@ -44,7 +44,12 @@ class App extends React.Component {
             />
 
             </div>
-            <Typography>Website coming soon!</Typography> 
+            <div className="text-content">
+              <div id="company-name">Prism Concepts </div>
+              <div>DESIGN | PLAN | BUILD</div>
+              <div id="site-info">Website coming soon!</div>
+            </div> 
+           
             <div className="contacts">
               <IconButton>
                 <Facebook />
