@@ -1,0 +1,96 @@
+$primary-color: #334e00;
+$primary-color2:#979400;
+$primary-color3:#4122003f;
+@mixin flex-col{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes righttoleft{
+  0%   {left:5em; top:0em;}
+  100% {left:0em; top:0em;}
+}
+
+
+#root {
+  .MuiAppBar-colorPrimary{
+    background-color: $primary-color;
+  }
+  .MuiSvgIcon-root{
+    fill: $primary-color2;
+    font-size: 3rem;
+  }
+}
+
+.App {
+  @include flex-col();
+  .MuiAppBar-root{
+    @include flex-row();
+    justify-content: space-between;
+  }
+  .top-nav {
+    @include flex-row();
+    justify-content: flex-start;
+    min-height: 10vh;
+    
+    img{
+      height: 70px;
+      width: 70px;
+    }
+    
+  }
+  .cover{
+    @include flex-col();
+    height: 100vh;
+    width: 100vw;
+    background-color: $primary-color3;
+    position: relative;
+    
+    
+    img{
+      animation: spin 3s ;
+      animation-iteration-count: infinite;
+      height: 150px;
+      width: 150px;
+    }
+    .under-construction-wrapper{
+      @include flex-col();
+        
+      .contacts{
+        margin-top: 1em;
+        .MuiSvgIcon-root{
+          fill: grey;
+        }
+      }   
+      .MuiTypography-body1{
+        margin: 1em;
+        font-size: 1.5em;
+        font-weight: 300;
+      }
+      
+    }
+  }  
+}
+
+
+
+
