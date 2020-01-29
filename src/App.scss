@@ -87,12 +87,21 @@ $primary-color3:#4122003f;
         margin: 1em;
         font-size: 1.5em;
         font-weight: 300;
+        color: $primary-color;
         #company-name{
-          //border-bottom: $primary-color solid 1px;
-          margin-bottom: 5px;
+          margin-bottom: 1em;
+          font-weight: 600;
+          text-transform: uppercase;
+          
+        }
+        #company-motto{
+          font-weight: 600;
+          border-bottom: $primary-color solid 1px;
         }
         #site-info{
-          margin: 1em;
+          margin: 1.5em;
+          
+          
         }
       }
       
@@ -102,6 +111,22 @@ $primary-color3:#4122003f;
       }
       .contacts{
         margin-top: 1em;
+        .facebook{
+          animation: spin 3s ;
+             
+        }
+        .twitter{
+          animation: spin 3s ;
+                
+        }
+        .whatsapp{
+          animation: spin 3s ;
+             
+        }
+        .instagram{
+          animation: spin 3s ;
+           
+        }
       }   
       
     }
