@@ -67,16 +67,22 @@ $primary-color3:#4122003f;
     width: 100vw;
     background-color: $primary-color3;
     position: relative;
-    
-    
-    img{
-      animation: spin 3s ;
-      animation-iteration-count: infinite;
-      height: 150px;
-      width: 150px;
-    }
     .under-construction-wrapper{
       @include flex-col();
+      .logo{
+        // background-image: url(./assets/images/logo.svg);
+        // background-repeat: no-repeat;
+        img{
+          height: 150px;
+          width: 150px;
+        }
+        
+      }
+      .flip{
+        animation: spin 3s ;
+        animation-iteration-count: infinite;        
+      }
+      
       .MuiSvgIcon-root{
         fill: $primary-color2;
         font-size: 3rem;
