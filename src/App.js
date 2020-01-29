@@ -12,9 +12,9 @@ class App extends React.Component {
     return (
       <div className="App">
           <AppBar className="top-nav">
-            <div>
+            <div className="top-nav-menu-icon">
               <IconButton>
-                <MenuIcon />
+                <MenuIcon className="menu-icon"/>
               </IconButton>
             </div>
          

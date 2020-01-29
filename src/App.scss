@@ -35,10 +35,7 @@ $primary-color3:#4122003f;
   .MuiAppBar-colorPrimary{
     background-color: $primary-color;
   }
-  .MuiSvgIcon-root{
-    fill: $primary-color2;
-    font-size: 3rem;
-  }
+  
 }
 
 .App {
@@ -51,6 +48,12 @@ $primary-color3:#4122003f;
     @include flex-row();
     justify-content: flex-start;
     min-height: 10vh;
+    .top-nav-menu-icon{
+      
+      .MuiSvgIcon-root{
+        fill: grey;
+      }
+    }
     
     img{
       height: 70px;
@@ -74,12 +77,12 @@ $primary-color3:#4122003f;
     }
     .under-construction-wrapper{
       @include flex-col();
-        
+      .MuiSvgIcon-root{
+        fill: $primary-color2;
+        font-size: 3rem;
+      }
       .contacts{
         margin-top: 1em;
-        .MuiSvgIcon-root{
-          fill: grey;
-        }
       }   
       .MuiTypography-body1{
         margin: 1em;
